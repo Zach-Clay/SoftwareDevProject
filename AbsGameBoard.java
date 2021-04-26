@@ -1,4 +1,4 @@
-//package cpsc2150.extendedConnectX;
+package cpsc2150.extendedConnectX;
 
 public abstract class AbsGameBoard implements IGameBoard{
 
