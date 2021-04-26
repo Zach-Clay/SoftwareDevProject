@@ -15,8 +15,6 @@ import java.util.List;
  * the buttons will be arranges in a ROWS_IN_BUTTON_PANEL x COLUMNS_IN_BUTTON_PANEL Grid
  * Players will use another set of buttons above the grid to select the column to place in
  * All events will be passed to the controller
- * <p>
- * You do not need to make any changes to this code, but you do need to understand much of what is happening
  */
 
 
