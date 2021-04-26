@@ -1,4 +1,4 @@
-//package cpsc2150.extendedConnectX;
+package cpsc2150.extendedConnectX;
 
 /**
  * GameBoard is abstractly a 2D grid of characters
@@ -6,26 +6,34 @@
  * Initialization Ensures:
  *      GameBoard contains only null characters i.e. is empty
  * Defines:
- *          max_num_rows: 100
- *          max_num_cols: 100
- *          max_num_toWin: 25
+ *          num_rows: Z
+ *          num_cols: Z
+ *          num_toWin: Z
  * Constraints:
- *      Only Characters can fill the game board
+ *      3<=num_rows<=100
+ *      3<=num_cols<=100
+ *      3<=num_toWin<=25
+ *      num_toWin<=r
+ *      num_toWin<=c
+ *      Only Characters can fill the game board, except the blank space character ' '
  */
 public interface IGameBoard {
 
     /**
-     * @return the number of rows in self, self = #self
+     * @return the number of rows in self
+     * @post getNumRows = number of rows in self, self = #self
      */
     public int getNumRows();
 
     /**
-     * @return the number of columns in self, self = #self
+     * @return the number of columns in self
+     * @post getNumColumns = number of columns in self, self = #self
      */
     public int getNumColumns();
 
     /**
-     * @return the number of tokens in a row needed to win the game, self = #self
+     * @return the number of tokens in a row needed to win the game
+     * @post getNumToWin = number of tokens to win in self, self = #self
      */
     public int getNumToWin();
 
@@ -57,6 +65,9 @@ public interface IGameBoard {
 
             if(whatsAtPos(temp) == ' '){
                 BoardPosition pos = new BoardPosition(i+1, c);
+
+                System.out.println(pos.getRow() + " " + pos.getColumn());
+
                 char p = whatsAtPos(pos);
                 if(checkHorizWin(pos, p)) return true;
                 else if(checkVertWin(pos, p)) return true;
