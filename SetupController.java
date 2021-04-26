@@ -10,8 +10,6 @@ package cpsc2150.extendedConnectX;
  * If there are no errors it will create a new IGameBoard object (the implementation will depend on
  * the size of the game board) to serve as the model, and the ConnectXController and ConnectXView.
  * Control is then passed over the the event dispatch thread that will wait for an event to occur
- * <p>
- * No changes need to be made to this class.
  */
 public class SetupController {
 
