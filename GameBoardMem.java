@@ -1,11 +1,11 @@
-//package cpsc2150.extendedConnectX;
+package cpsc2150.extendedConnectX;
 
 import java.util.Map;
 import java.util.*;
 
 public class GameBoardMem extends AbsGameBoard{
     /**
-     * @invariant only characters can occupy the map key
+     * @invariant only characters can occupy the map key except the blank character ' '
      *            AND 3<=row<=100 AND 3<=col<=100 AND 3<=w<=25 AND w<=r AND w<=c
      * @correspondence self = map<Character,List<BoardPosition>>
      */
