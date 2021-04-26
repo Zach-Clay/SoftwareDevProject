@@ -2,12 +2,6 @@ package cpsc2150.extendedConnectX;
 
 /**
  * The controller class will handle communication between our View and our Model (IGameBoard)
- * <p>
- * This is where you will write code
- * <p>
- * You will need to include your IGameBoard interface
- * and both of the IGameBoard implementations from Project 4
- * If your code was correct you will not need to make any changes to your IGameBoard implementation class
  */
 public class ConnectXController {
 
