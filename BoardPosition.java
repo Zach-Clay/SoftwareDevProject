@@ -1,4 +1,4 @@
-//package cpsc2150.extendedConnectX;
+package cpsc2150.extendedConnectX;
 
 public class BoardPosition {
     /**
