@@ -1,10 +1,10 @@
-//package cpsc2150.extendedConnectX;
+package cpsc2150.extendedConnectX;
 
 public class GameBoard extends AbsGameBoard{
     /**
-     * @invariant only characters can occupy the GameBoard
+     * @invariant only characters can occupy the GameBoard except the blank character ' '
      *           AND 3<=row<=100 AND 3<=col<=100 AND 3<=w<=25 AND w<=r AND w<=c
-     * @correspondence self = board[0...max_num_rows][0...max_num_cols]
+     * @correspondence self = board[0...num_rows][0...num_cols]
      */
     private char[][] board;
     private int row;
