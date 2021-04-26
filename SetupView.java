@@ -10,9 +10,6 @@ import javax.swing.*;
  * This class contains the code to create and layout the GUI for the setup screen.
  * It also is the observer of the submit button. When someone clicks on submit
  * the action performed method is called, which then calls the controller Object.
- * <p>
- * You do not need to make any changes to this file, but it is a good example of
- * a java swing GUI.
  */
 
 public class SetupView extends JFrame implements ActionListener {
